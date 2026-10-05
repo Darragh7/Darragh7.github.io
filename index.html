@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Darragh O'Keeffe — Computer Science graduate and MSc AI &amp; Data Science student. Practical ML systems and full-stack software." />
+  <meta name="theme-color" content="#07090d" />
+  <title>Darragh O'Keeffe — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-nav" role="banner">
+    <div class="wrap nav-row">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#041018" stroke-width="2.2" stroke-linecap="round"><path d="M4 17c4-8 12-8 16 0"/><circle cx="8" cy="10" r="1.5" fill="#041018" stroke="none"/><circle cx="16" cy="10" r="1.5" fill="#041018" stroke="none"/></svg>
+        </span>
+        Darragh O'Keeffe
+      </a>
+      <button class="nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 1400 640" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="railA" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#4db8ff" stop-opacity="0"/>
+              <stop offset="25%" stop-color="#4db8ff" stop-opacity="0.55"/>
+              <stop offset="70%" stop-color="#8b9cff" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#3dd9a0" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="railB" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#4db8ff" stop-opacity="0"/>
+              <stop offset="40%" stop-color="#4db8ff" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#4db8ff" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#4db8ff" stop-opacity="0.45"/>
+              <stop offset="100%" stop-color="#4db8ff" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="4" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <ellipse cx="1080" cy="160" rx="280" ry="180" fill="url(#orb)"/>
+          <!-- perspective rails -->
+          <path d="M-60 480 C280 360, 520 420, 760 380 S1180 300, 1460 340" fill="none" stroke="url(#railA)" stroke-width="2.5"/>
+          <path d="M-60 510 C280 390, 520 450, 760 410 S1180 330, 1460 370" fill="none" stroke="url(#railB)" stroke-width="2"/>
+          <path d="M-60 540 C280 420, 520 480, 760 440 S1180 360, 1460 400" fill="none" stroke="url(#railB)" stroke-width="1.5" opacity="0.6"/>
+          <!-- sleeper marks -->
+          <g stroke="#4db8ff" stroke-width="1.2" opacity="0.25">
+            <line x1="180" y1="455" x2="195" y2="505"/>
+            <line x1="320" y1="430" x2="338" y2="485"/>
+            <line x1="480" y1="420" x2="498" y2="475"/>
+            <line x1="650" y1="400" x2="668" y2="455"/>
+            <line x1="820" y1="375" x2="840" y2="430"/>
+            <line x1="980" y1="345" x2="1000" y2="400"/>
+            <line x1="1140" y1="330" x2="1160" y2="385"/>
+          </g>
+          <!-- cell towers / signal sites -->
+          <g filter="url(#softGlow)">
+            <g stroke="#4db8ff" stroke-width="1.8" fill="none" opacity="0.7">
+              <line x1="260" y1="445" x2="260" y2="300"/>
+              <circle cx="260" cy="288" r="10"/>
+              <path d="M245 275 q15 -22 30 0" opacity="0.5"/>
+              <path d="M238 265 q22 -32 44 0" opacity="0.35"/>
+              <line x1="520" y1="425" x2="520" y2="260"/>
+              <circle cx="520" cy="248" r="10"/>
+              <path d="M505 235 q15 -22 30 0" opacity="0.5"/>
+              <path d="M498 225 q22 -32 44 0" opacity="0.35"/>
+              <line x1="820" y1="385" x2="820" y2="220"/>
+              <circle cx="820" cy="208" r="10"/>
+              <path d="M805 195 q15 -22 30 0" opacity="0.5"/>
+              <path d="M798 185 q22 -32 44 0" opacity="0.35"/>
+              <line x1="1100" y1="350" x2="1100" y2="200"/>
+              <circle cx="1100" cy="188" r="10"/>
+              <path d="M1085 175 q15 -22 30 0" opacity="0.5"/>
+              <path d="M1078 165 q22 -32 44 0" opacity="0.35"/>
+            </g>
+          </g>
+          <!-- MoE expert gating arcs -->
+          <g fill="none" stroke="#3dd9a0" stroke-width="1.4" opacity="0.45" stroke-dasharray="5 7">
+            <path d="M270 288 C360 200, 420 200, 510 248"/>
+            <path d="M530 248 C640 160, 700 160, 810 208"/>
+            <path d="M830 208 C940 130, 1000 130, 1090 188"/>
+          </g>
+          <!-- handover event pulses -->
+          <g fill="#4db8ff">
+            <circle cx="390" cy="390" r="4" opacity="0.7"/>
+            <circle cx="670" cy="365" r="3.5" opacity="0.55"/>
+            <circle cx="960" cy="330" r="4" opacity="0.65"/>
+          </g>
+          <g fill="#3dd9a0" opacity="0.5">
+            <circle cx="390" cy="390" r="12" fill="none" stroke="#3dd9a0" stroke-width="1"/>
+            <circle cx="960" cy="330" r="14" fill="none" stroke="#3dd9a0" stroke-width="1"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="wrap hero-inner">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Cork, Ireland · Open to opportunities</p>
+          <h1>Darragh O'Keeffe</h1>
+          <p class="hero-role">Computer Science graduate · MSc Artificial Intelligence &amp; Data Science (UCC)</p>
+          <p class="hero-tagline">Building practical ML systems and full-stack software that hold up in the real world — from train-network prediction to production census tooling.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              View projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+          <div class="hero-stats" aria-label="Highlights">
+            <div class="hero-stat"><strong>1.1</strong><span>Dissertation</span></div>
+            <div class="hero-stat"><strong>~99%</strong><span>Detection</span></div>
+            <div class="hero-stat"><strong>2.1</strong><span>BSc CS · UCC</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Featured project snapshot">
+          <div class="panel-label">
+            <span>Featured pipeline</span>
+            <span class="panel-live">Live metrics</span>
+          </div>
+          <div class="panel-route">DART · Tara Street ↔ Howth · LTE handover</div>
+          <div class="panel-metrics">
+            <div class="panel-metric"><b>~99%</b><span>Detection</span></div>
+            <div class="panel-metric"><b>~94%</b><span>Recall</span></div>
+            <div class="panel-metric"><b>~70%</b><span>PR-AUC</span></div>
+            <div class="panel-metric"><b>1.1</b><span>Grade</span></div>
+          </div>
+          <p class="panel-note">Mixture-of-Experts model on ~35k signal + GPS samples — anticipatory network optimisation for onboard QoS.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">About</p>
+          <h2 class="section-title">Applied ML, end-to-end delivery</h2>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3.5"/></svg>
+          </div>
+          <p class="about-body">Computer Science graduate from University College Cork (2.1; dissertation First Class / 1.1), now starting an MSc in Artificial Intelligence and Data Science. I work across the software lifecycle — requirements, integration, testing, and deployment — in both regulated and customer-facing settings. My strongest thread is applied machine learning backed by solid full-stack delivery: end-to-end pipelines, clean interfaces, and systems that other people can actually use. Based in Cork, Ireland.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Featured work</p>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-lede">Research depth first, then production delivery, then collaborative and personal products.</p>
+        </div>
+
+        <div class="project-stack">
+          <!-- 1. Cellular Handover -->
+          <article class="card card-featured">
+            <div class="card-meta">
+              <span class="pill pill-cyan">Final Year Project</span>
+              <span class="pill pill-mint">Dissertation 1.1</span>
+            </div>
+            <h3>Improving train connectivity by predicting cellular handover events</h3>
+            <p class="card-pitch">End-to-end ML pipeline that predicts imminent LTE handover events on a real rail route (DART: Tara Street ↔ Howth), using ~35,000 samples of signal + GPS data collected across multiple journeys. A Mixture-of-Experts model specialises across heterogeneous route segments to support anticipatory network optimisation for onboard QoS.</p>
+            <div class="metrics" role="list" aria-label="Key results">
+              <div class="metric hi" role="listitem"><div class="metric-val">~99%</div><div class="metric-lab">Detection</div></div>
+              <div class="metric hi" role="listitem"><div class="metric-val">~94%</div><div class="metric-lab">Recall</div></div>
+              <div class="metric" role="listitem"><div class="metric-val">~45%</div><div class="metric-lab">Precision</div></div>
+              <div class="metric" role="listitem"><div class="metric-val">~70%</div><div class="metric-lab">PR-AUC</div></div>
+            </div>
+            <p class="why">Shows research-to-pipeline ownership — real-world data collection, noisy-data engineering, problem formulation trade-offs, and a model aimed at operational use (early detection over exact timing).</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Spatiotemporal features</span>
+              <span class="tag">Mixture of Experts</span>
+              <span class="tag">Cross-validated evaluation</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-primary btn-sm" href="https://github.com/Darragh7/cellular-handover-prediction" target="_blank" rel="noopener noreferrer">
+                View on GitHub
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. CSO Census -->
+          <article class="card card-regulated">
+            <div class="card-meta">
+              <span class="pill pill-violet">CSO Ireland · Internship</span>
+              <span class="pill pill-muted">Production</span>
+            </div>
+            <h3>Census Archive Web Application</h3>
+            <p class="card-pitch">Team-built, production-deployed web archive that redesigned a legacy census system to fit the Central Statistics Office’s web infrastructure, improving usability and maintainability for stakeholders.</p>
+            <p class="why">Full Agile lifecycle in a regulated government environment — requirements, API/backend design, frontend work, black-box testing, and a live deployment used by CSO stakeholders. Strong “ships production software” signal.</p>
+            <div class="tags">
+              <span class="tag">C#</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Stored procedures</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript/jQuery</span>
+              <span class="tag">AJAX</span>
+              <span class="tag">TortoiseSVN</span>
+              <span class="tag">Agile / ClickUp</span>
+            </div>
+            <div class="card-actions">
+              <span class="internal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                Internal CSO project — no public repository
+              </span>
+            </div>
+          </article>
+
+          <!-- 3 & 4 -->
+          <div class="card-row">
+            <article class="card card-warm">
+              <div class="card-meta">
+                <span class="pill pill-amber">Team product</span>
+              </div>
+              <h3>Simul</h3>
+              <p class="card-pitch">Team-built collaborative scheduling and group activity app that helps friends coordinate events and find shared free time across busy calendars.</p>
+              <p class="card-focus">Personal focus: project management, version control, documentation, and algorithm design.</p>
+              <p class="why">Shows teamwork, PM discipline, and product thinking alongside engineering — useful balance to the solo ML dissertation.</p>
+              <div class="tags"><span class="tag">JavaScript</span></div>
+              <div class="card-actions">
+                <a class="btn btn-ghost btn-sm" href="https://github.com/Darragh7/simul" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+            </article>
+
+            <article class="card card-warm">
+              <div class="card-meta">
+                <span class="pill pill-amber">Personal product</span>
+              </div>
+              <h3>Golf Handicap &amp; Statistics Calculator</h3>
+              <p class="card-pitch">Web app for Cork-area golfers to calculate handicap and performance stats, with SQL-backed interfaces and visual comparison against pro-golfer benchmarks.</p>
+              <p class="why">Personal product that marries domain passion (competitive golfer, handicap 6) with data interfaces and clear user value — approachable, concrete, interview-friendly.</p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">HTML/CSS/JS</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-ghost btn-sm" href="https://github.com/Darragh7/Golf-Stats-App" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Toolkit</p>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-block">
+            <h3>Languages</h3>
+            <div class="chips">
+              <span class="chip">Python</span><span class="chip">Java</span><span class="chip">C#</span><span class="chip">R</span>
+              <span class="chip">SQL</span><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3>Machine learning &amp; data</h3>
+            <div class="chips">
+              <span class="chip">PyTorch</span><span class="chip">Keras</span><span class="chip">scikit-learn</span><span class="chip">Pandas</span>
+              <span class="chip">NumPy</span><span class="chip">matplotlib</span><span class="chip">seaborn</span><span class="chip">Jupyter</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3>Web / full-stack</h3>
+            <div class="chips">
+              <span class="chip">React</span><span class="chip">Flask</span><span class="chip">Bootstrap</span><span class="chip">AJAX</span><span class="chip">Firebase</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3>Optimisation / OR</h3>
+            <div class="chips">
+              <span class="chip">Constraint programming (Choco)</span>
+              <span class="chip">Operations Research (lp_solve)</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3>Tools &amp; practice</h3>
+            <div class="chips">
+              <span class="chip">Git/GitHub</span><span class="chip">GitHub Copilot</span><span class="chip">TortoiseSVN</span>
+              <span class="chip">Agile delivery</span><span class="chip">Black-box testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Background</p>
+          <h2 class="section-title">Experience &amp; education</h2>
+        </div>
+        <div class="exp-grid">
+          <div class="exp-col">
+            <h3>Education</h3>
+            <ul class="timeline">
+              <li class="t-item">
+                <strong>MSc Artificial Intelligence &amp; Data Science</strong>
+                <div class="t-org">University College Cork (CKR49)</div>
+                <div class="t-date">Sep 2026 – May 2027</div>
+                <p class="t-detail">Modules include Machine Learning &amp; Statistical Analytics, Linear Statistical Modelling, Complex Systems Design, Optimisation, Operations Research.</p>
+              </li>
+              <li class="t-item">
+                <strong>BSc Computer Science</strong>
+                <div class="t-org">University College Cork (CK401)</div>
+                <div class="t-date">Sep 2022 – May 2026</div>
+                <p class="t-detail">Final degree: Second Class Honours Grade 1 (2.1); dissertation First Class (1.1). Strong modules: Software Engineering (85%), Android Development (85%), Advanced Software Engineering (77%), AI II (74%), IoT (72%).</p>
+              </li>
+              <li class="t-item">
+                <strong>Leaving Cert</strong>
+                <div class="t-org">Patrician Academy, Mallow</div>
+                <p class="t-detail">532 points.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="exp-col">
+            <h3>Experience</h3>
+            <ul class="timeline">
+              <li class="t-item">
+                <strong>Intern Application Developer</strong>
+                <div class="t-org">Central Statistics Office Ireland</div>
+                <div class="t-date">Mar 2025 – Aug 2025</div>
+                <p class="t-detail">Census archive web app; black-box testing with Excel test reports; Agile sprints through production deployment for CSO stakeholders.</p>
+              </li>
+              <li class="t-item">
+                <strong>Student IT Engineer</strong>
+                <div class="t-org">SR Technics Group</div>
+                <div class="t-date">May 2024 – Sep 2024</div>
+                <p class="t-detail">SOPs and ISMS workflows for EASA Part 145 Information Security Management System compliance.</p>
+              </li>
+              <li class="t-item">
+                <strong>Auditor</strong>
+                <div class="t-org">Serve Legal</div>
+                <div class="t-date">Aug 2023 – Present</div>
+                <p class="t-detail">500+ age-restriction &amp; media compliance audits across 275+ venues; route planning across Munster, Leinster, and Connacht.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <p class="section-kicker">Contact</p>
+          <h2 class="section-title">Let’s connect</h2>
+          <p class="section-lede">Open to roles and conversations around applied ML, data science, and full-stack software.</p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:darraghok7@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+              darraghok7@gmail.com
+            </a>
+            <a class="contact-link" href="https://github.com/Darragh7" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05A9.36 9.36 0 0112 6.84c.85.004 1.71.12 2.51.35 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.59.69.48A10.05 10.05 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+              GitHub
+            </a>
+            <a class="contact-link" href="https://linkedin.com/in/darragh-okeeffe" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="footer-bar">
+          <span>© 2026 Darragh O'Keeffe · Cork, Ireland</span>
+          <span><a href="#top">Back to top</a></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
